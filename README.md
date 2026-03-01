@@ -4,17 +4,16 @@
 
 ## 📌 Project Overview
 
-**TransLingua** is an AI-driven multi-language translation platform designed to break language barriers through intelligent, real-time text translation.
+**TransLingua** is an AI-powered multi-language translation application that enables real-time, context-aware text translation across global languages.
 
-The application enables users to:
+Built using **Streamlit + Gemini AI**, the system provides an intuitive and professional interface for seamless translation while preserving contextual meaning.
 
-✔ Translate text across multiple languages  
-✔ Detect source language automatically  
-✔ Maintain contextual accuracy using AI  
-✔ Generate clean and structured translated output  
-✔ Experience a professional, intuitive UI  
+The application allows users to:
 
-It leverages modern AI models to deliver fast, context-aware translations suitable for everyday communication, academic use, and professional environments.
+✔ Translate text between multiple languages  
+✔ Preserve sentence meaning using AI  
+✔ Generate structured translation output  
+✔ Experience a clean and responsive UI  
 
 ---
 
@@ -22,31 +21,23 @@ It leverages modern AI models to deliver fast, context-aware translations suitab
 
 - AI API Integration  
 - Prompt Engineering  
-- Multi-Language Processing  
-- Frontend UI Structuring  
-- Streamlit Application Development  
-- Language Detection Logic  
+- Streamlit UI Design  
+- Multi-Language NLP  
 - Context-Aware Translation  
-- Modular Python Architecture  
+- Environment Variable Handling  
+- Python Application Development  
 
 ---
 
 ## 🏗 Project Structure
 
 ```
-TransLingua/
+Project Executive Codes/
 │
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── modules/
-│   ├── translator.py
-│   ├── language_detector.py
-│   └── formatter.py
-│
-└── assets/
-    └── styles.css
+├── translang.py        # Main Application (UI + Logic + Styling)
+├── requirements.txt    # Project Dependencies
+├── .env                # API Key Storage
+└── README.md           # Project Documentation
 ```
 
 ---
@@ -55,87 +46,98 @@ TransLingua/
 
 | Layer        | Technology Used        |
 |--------------|------------------------|
-| Frontend     | Streamlit              |
+| Frontend     | Streamlit UI           |
 | Backend      | Python                 |
-| AI Engine    | Gemini API / LLM       |
-| Styling      | Custom UI Layout       |
-| Processing   | NLP Techniques         |
-| Deployment   | Local / Cloud Ready    |
+| AI Engine    | Gemini API             |
+| Styling      | Custom CSS inside Streamlit |
+| Environment  | dotenv                 |
 
 ---
 
 ## ✨ Features
 
 ### 🌐 Multi-Language Translation
-Translate text into multiple global languages instantly.
+Supports translation across major global languages including  
+**English, Spanish, French, German, Chinese, Hindi, Japanese, Korean, Italian, Tamil, Telugu, Portuguese, Arabic, Russian, Bengali, Malayalam, and Urdu.**
 
-### 🔍 Automatic Language Detection
-Identifies source language without manual input.
+---
 
 ### 🧠 AI Context Understanding
-Maintains sentence meaning instead of literal translation.
+Uses Gemini AI to translate based on meaning rather than word-to-word substitution.
 
-### ⚡ Real-Time Output
-Fast response generation.
+---
 
-### 🧩 Professional UI
-- Column-based layout  
-- Container boxes  
-- Section separators  
-- Clean result formatting  
+### 🎨 Professional UI
 
-### 📋 Structured Translation Output
+Frontend enhancements include:
 
-Displays:
+✔ Gradient Background  
+✔ Styled Input Fields  
+✔ Rounded Dropdowns  
+✔ Interactive Buttons  
+✔ Container Layout  
+✔ Structured Output Display  
 
-✔ Original Text  
-✔ Detected Language  
-✔ Translated Text  
+---
+
+### ⚡ Real-Time Translation
+Instant translation powered by AI model responses.
 
 ---
 
 ## 🖥 Installation
 
 ### 1️⃣ Clone Repository
+
 ```bash
 git clone https://github.com/your-username/translingua.git
 cd translingua
 ```
 
+---
+
 ### 2️⃣ Create Virtual Environment
+
 ```bash
 python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
+venv\Scripts\activate
 ```
 
+---
+
 ### 3️⃣ Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
+---
+
 ### 4️⃣ Add API Key
 
-Create `.env` file:
+Create a `.env` file inside the project folder:
 
 ```
 GOOGLE_API_KEY=your_api_key_here
 ```
 
+---
+
 ### 5️⃣ Run Application
+
 ```bash
-streamlit run app.py
+streamlit run translang.py
 ```
 
 ---
 
 ## 🎯 Conclusion
 
-**TransLingua** demonstrates how AI can transform multilingual communication through:
+**TransLingua** demonstrates how AI can simplify multilingual communication through:
 
 ✔ Intelligent translation  
+✔ Clean UI design  
+✔ Real-time response  
 ✔ Context preservation  
-✔ User-friendly interface  
-✔ Real-time performance  
 
-This project highlights the practical use of AI in solving global communication challenges with a clean and scalable architecture.
+This project showcases practical AI integration into user-friendly applications for global communication.
